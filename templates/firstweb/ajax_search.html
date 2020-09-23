@@ -1,0 +1,9 @@
+{% if statuss_list %}
+    <ul class="statuss_list" style="list-style: none;"  >
+        {% for status in statuss_list %}
+               <li> <a href='/test/stud/{{status}}'>{{status}}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+<p>oops! no results :(</p>
+{% endif %}
